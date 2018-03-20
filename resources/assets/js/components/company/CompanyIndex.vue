@@ -11,7 +11,7 @@
  <div class="row">
     <div class="col-md-8 col-md-offset-2">
          <ol class="breadcrumb">
-            <li  class="active"><router-link :to="{name: 'indexCompany'}" >Companies</router-link></li>  
+            <li  class="active"><router-link :to="{name: 'indexCompany'}" >Companies </router-link></li>  
         </ol>
         <div class="panel panel-default">
             <div class="panel-heading">Companies</div>
