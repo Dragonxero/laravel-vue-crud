@@ -20,7 +20,7 @@
 
                      <p> <router-link :to="{name: 'createCompany'}" class="btn btn-primary">Create Company</router-link></p>
               <div class="pencarian">
-                  <input type="text" class="form-control" name="pencarian"placeholder="Pencarian"  v-model="pencarian" >
+                  <input type="text" class="form-control" name="pencarian" placeholder="Pencarian"  v-model="pencarian" >
               </div>
                 <table class="table table-bordered">
                     <thead>
