@@ -7,7 +7,5 @@
 
 	</router-view>
 
-
-
 </div>
 @endsection

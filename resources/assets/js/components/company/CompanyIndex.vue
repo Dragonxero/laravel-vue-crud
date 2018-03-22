@@ -17,10 +17,9 @@
             <div class="panel-heading">Companies</div>
 
             <div class="panel-body">
-
                      <p> <router-link :to="{name: 'createCompany'}" class="btn btn-primary">Create Company</router-link></p>
               <div class="pencarian">
-                  <input type="text" class="form-control" name="pencarian" placeholder="Pencarian"  v-model="pencarian" >
+                  <input type="text" name="pencarian" v-model="pencarian" placeholder="Pencarian" class="form-control">
               </div>
                 <table class="table table-bordered">
                     <thead>
@@ -42,8 +41,6 @@
                             v-on:click="deleteCompany(company.id, index,company.name)">
                             Delete
                         </a></td>
-
-
                     </tr>
                 </tbody>
                 <tbody class="data-tidak-ada" v-else>

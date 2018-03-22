@@ -23,9 +23,9 @@
                         <label for="name" class="col-md-2 control-label">Jenis</label>
                         <div class="col-md-4">
                             <selectize-component v-model="company.jenis" :settings="settings"> 
-                                    <option value="0"  >Kecil</option>
-                                    <option value="1"  >Besar</option>
-                                </selectize-component>
+                                    <option :value="0"  >Kecil</option>
+                                    <option :value="1"  >Besar</option>
+                            </selectize-component>
                             <span v-if="errors.jenis" class="label label-danger">{{ errors.jenis[0] }}</span>
                             
                         </div>

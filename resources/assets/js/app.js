@@ -10,12 +10,12 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 import VueRouter from 'vue-router';
- window.Vue.use(VueRouter);
- import VueSwal from 'vue-swal'
- import Spinner from 'vue-simple-spinner'
+window.Vue.use(VueRouter);
+import VueSwal from 'vue-swal'
+import Spinner from 'vue-simple-spinner'
 
- window.Vue.use(VueSwal)
- window.Vue.use(Spinner)
+window.Vue.use(VueSwal)
+window.Vue.use(Spinner)
 
 Vue.component('vue-simple-spinner',require('vue-simple-spinner'))
 Vue.component('selectize-component', require('vue2-selectize'));
