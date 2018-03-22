@@ -54161,7 +54161,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -54187,10 +54186,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 app.alert(app.message);
                 app.company.name = '';
                 app.company.jenis = '';
-                app.errors = '';
+                app.errors = [];
                 app.$router.replace('/');
             }).catch(function (resp) {
                 app.success = false;
+                console.log(resp.response.data.errors);
+                if (typeOf(resp.response.data.errors) === 'undefined') {
+                    app.errors = '';
+                }
                 app.errors = resp.response.data.errors;
             });
         },
@@ -54319,11 +54322,11 @@ var render = function() {
                         }
                       },
                       [
-                        _c("option", { domProps: { value: 0 } }, [
+                        _c("option", { attrs: { value: "0" } }, [
                           _vm._v("Kecil")
                         ]),
                         _vm._v(" "),
-                        _c("option", { domProps: { value: 1 } }, [
+                        _c("option", { attrs: { value: "1" } }, [
                           _vm._v("Besar")
                         ])
                       ]
